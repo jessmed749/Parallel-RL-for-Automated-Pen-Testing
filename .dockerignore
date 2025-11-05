@@ -5,6 +5,7 @@ docker-compose.yml
 # Ignore node_modules and other dependencies
 node_modules
 *.log
+logs/
 
 # Ignore Python cache files
 __pycache__/
@@ -16,7 +17,13 @@ venv/
 
 # Ignore build artifacts
 build/
+*.o
+pentest
+pentest-cpu
 dist/
+
+# Ignore Test files
+tests/
 
 # Ignore system files
 .DS_Store

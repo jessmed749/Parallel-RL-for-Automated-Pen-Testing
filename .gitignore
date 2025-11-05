@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+*.o
+*.out
+pentest
+pentest-cpu
+pentest_tsan
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+logs/*.log
+
+# Results
+data/results/*.csv
+benchmarks/*.log
+
+# OS
+.DS_Store
