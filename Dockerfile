@@ -24,5 +24,17 @@ RUN apt-get update && apt-get install -y \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
+# Set gcc-11 and g++-11 as the default compilers    
+RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 100 \
+    && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 100
 
+# Install Python packages
+RUN pip3 install --no-cache-dir \
+    numpy \
+    gymnasium \
+    pybind11 \
 
+# Cretae working directory
+WORKDIR /app
+
+CMD ["/bin/bash"]
