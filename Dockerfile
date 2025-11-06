@@ -32,9 +32,13 @@ RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 100 \
 RUN pip3 install --no-cache-dir \
     numpy \
     gymnasium \
-    pybind11 \
+    pybind11
 
-# Cretae working directory
+# Set Python 3.10 as the default Python version
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1 \
+    && update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
+
+# Create working directory
 WORKDIR /app
 
 CMD ["/bin/bash"]
