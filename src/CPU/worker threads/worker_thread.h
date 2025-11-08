@@ -1,0 +1,2 @@
+#ifndef WORKER_THREAD_H
+#define WORKER_THREAD_H
