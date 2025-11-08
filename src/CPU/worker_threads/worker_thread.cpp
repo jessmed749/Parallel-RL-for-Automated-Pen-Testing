@@ -1,6 +1,7 @@
 #include "worker_thread.h"
 #include <random>
 #include <iostream>
+
 // CPUPolicy implementation
 CPUPolicy::CPUPolicy(unsigned int seed) {
     // constructor intentionally does not rely on class members for RNG or epsilon,
