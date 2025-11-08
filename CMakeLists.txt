@@ -20,6 +20,7 @@ endif()
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=thread -g")
 
 # Include directories
+include_directories(${PROJECT_SOURCE_DIR}/include)
 include_directories(${PROJECT_SOURCE_DIR}/src/CPU/environment)
 include_directories(${PROJECT_SOURCE_DIR}/src/CPU/queues)
 

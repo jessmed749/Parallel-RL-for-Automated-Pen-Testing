@@ -4,7 +4,7 @@
 #include <array>
 #include <cstdint>
 
-// State observation (5 nodes, each 0 or 1 for compromised status)
+//  5 nodes, each 0 or 1 for compromised status
 using State = std::array<float, 5>;
 
 // Request from worker thread to RL agent
@@ -22,8 +22,8 @@ struct StateRequest {
 // Response from RL agent to worker thread
 struct ActionResponse {
     int request_id;      // Match to original request
-    int action;          // Action to take (0-3)
-    float confidence;    // Confidence score (0.0-1.0)
+    int action;          // Action to take 
+    float confidence;    // Confidence score 
 
     ActionResponse() : request_id(0), action(0), confidence(0.0f) {}
 

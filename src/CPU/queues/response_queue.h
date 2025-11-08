@@ -1,7 +1,7 @@
 #ifndef RESPONSE_QUEUE_H
 #define RESPONSE_QUEUE_H
 
-#include "data_structures.h"
+#include "../../../include/data_structures.h"
 #include <unordered_map>
 #include <mutex>
 #include <condition_variable>

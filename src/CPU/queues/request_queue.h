@@ -1,7 +1,7 @@
 #ifndef REQUEST_QUEUE_H
 #define REQUEST_QUEUE_H
 
-#include "data_structures.h"
+#include "../../../include/data_structures.h"
 #include <queue>
 #include <mutex>
 #include <condition_variable>
