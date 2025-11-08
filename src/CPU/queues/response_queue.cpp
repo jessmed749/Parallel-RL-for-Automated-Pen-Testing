@@ -1,4 +1,4 @@
-#include "../include/response_queue.h"
+#include "response_queue.h"
 
 void ResponseQueue::push(int request_id, const ActionResponse& resp) {
     std::lock_guard<std::mutex> lock(mutex_);
